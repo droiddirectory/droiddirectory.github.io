@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Safely Root LineageOS 23.2 with APatch"
-date: 2026-02-25 10:00:00 +0530
+date: 2026-02-24 21:00:00 +0530
 categories: tutorial android
 ---
 
