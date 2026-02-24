@@ -8,6 +8,8 @@
     {% seo %}
     <style>
       header .btn { display: none !important; }
+      /* This specifically targets the prefix if the theme tries to add it via CSS */
+      header h1::before { content: "" !important; }
     </style>
   </head>
 
@@ -15,7 +17,7 @@
     <header>
       <div class="container">
         <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h1 style="display: inline-block;">Chinmay Pandya - Tech & Android Development</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
       </div>
