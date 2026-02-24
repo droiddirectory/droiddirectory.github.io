@@ -2,34 +2,41 @@
 ---
 @import "{{ site.theme }}";
 
-// This makes the website content wider
+// Force the main container to use the whole screen
 .wrapper {
-  max-width: 95% !important;
+  max-width: 95% !important; 
+  width: 95% !important;
   margin: 0 auto !important;
 }
 
-// This hides the "View My GitHub Profile" link for a cleaner look
-header ul {
-  display: none !important;
-}
-
-// Adjusts the sidebar and main content for the new width
+// Expand the content area
 section {
-  width: 75% !important;
+  width: 78% !important;
+  max-width: none !important;
   float: right !important;
+  padding-right: 5% !important;
 }
 
+// Keep the sidebar to the left
 header {
-  width: 20% !important;
+  width: 18% !important;
   float: left !important;
   position: sticky;
   top: 20px;
 }
 
-// Fixes mobile view so it doesn't break
+// Clean up: Hide the "View My GitHub Profile" link
+header ul {
+  display: none !important;
+}
+
+// Make sure it still looks good on phones
 @media print, screen and (max-width: 960px) {
   header, section {
     float: none !important;
     width: 100% !important;
+  }
+  .wrapper {
+    width: 90% !important;
   }
 }
