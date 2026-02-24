@@ -2,31 +2,23 @@
 layout: default
 ---
 
-<style>
-  /* This targets the specific title prefix in the Hacker theme */
-  header h1::before {
-    content: "" !important;
-    display: none !important;
-  }
-  /* This ensures the title we manually set in the layout is clean */
-  #a-title h1::before {
-    content: "" !important;
-  }
-</style>
+# Android Development & Customization
+Welcome to the official **Droid Directory**. Here you will find deep dives into Android internals, custom ROMs, and advanced rooting guides.
 
-# Welcome to Droid Directory
+---
 
-This is the central hub for Android Customization, Magisk/APatch Modules, and Tech Guides.
-
-Stay tuned for deep dives into custom ROMs, rooting tutorials, and automation scripts!
-
-## Latest Posts
+## Latest Technical Guides
 
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      - {{ post.date | date: "%B %d, %Y" }}
+      <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
+      <br><small>Published on {{ post.date | date: "%B %d, %Y" }}</small>
     </li>
   {% endfor %}
 </ul>
+
+---
+
+### About the Project
+Droid Directory is a resource for power users and developers working with modern Android environments like LineageOS and APatch.
